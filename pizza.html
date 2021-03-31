@@ -1,0 +1,323 @@
+
+
+<!DOCTYPE html>
+<head>
+   <title>pizza.in</title>
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+   <style>
+   html {
+  scroll-behavior: smooth;
+}</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(".section_06").mouseenter(function(){
+    $(".section_06_left").fadeIn(5000);
+    $(".section_06_center").fadeIn(10000);
+    $(".section_06_right").fadeIn(15000);
+  });
+});
+</script>
+   <script>// Select all links with hashes
+$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
+
+</script>
+   <noscript></noscript>
+   <meta>
+   </meta>
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+   </link>
+</head>
+<body>
+
+   <div class="hero_section">
+      <div class="hero_section_header">
+         <div class="hero_section_left">
+            <ul class="menu_left">
+               <li>Home</li>
+               <li><a href="#menu_card_list">Menu</a></li>
+               <li><a href="#new_items">Features</a></li>
+               <li><a href="#news_list">News</a></li>
+               <li>Reservation</li>
+               <li>Contacts</li>
+            </ul>
+         </div>
+         <div class="hero_section_center">
+		 
+            <img src="images/logo.png" alt="image not found"/>
+         </div>
+         <div class="hero_section_right">
+            <ul class="menu_right">
+               <li><i class="fa fa-phone" aria-hidden="true"></i>123-456-7890</li>
+               <li style="margin-left:10px"><i class="fa fa-shopping-cart"></i>0 Items-$0.00</li>
+               <li style="font-size:10px"><a href="#">BOOK A TABLE</a></li>
+            </ul>
+         </div>
+      </div>
+      <div class="static">
+         <div class="static_1">
+            <a href="#"><i class="fa fa-shopping-cart"></i></a>
+         </div>
+         <div class="static_2">
+            <a href="#"><i class="fa fa-image"></i></a>
+         </div>
+         <div class="static_3">
+            <a href="#"><i class="fa fa-credit-card"></i></a>
+         </div>
+      </div>
+      <div class="title">
+         <h3><i>Authentic Italian Pizza</i></h3>
+         <h1>The best Pizza in town!</h1>
+         <a href="#">ORDER ONLINE NOW</a>
+      </div>
+   </div>
+
+<!--hero section ends-->
+<div class="section_01">
+   <div class="section_01_left">
+  
+   <h1>Welcome to Pizza House</h1>
+           <center> <span><i>Our chefs are working 24/7 and are ready
+            to accept visitors and at any time of the day and night</i>
+            </span></center>
+            <p>We would like to take this opportunity to welcome you at our Pizza House. We are offering a warm, friendly atmosphere to share a meal with family and friends at any time of the day or evening.</p>
+            <a href="#">LEARN MORE</a>
+   </div>
+  
+   <div class="section_01_right">
+      <img src="images/img-02.png" alt="image not found"/>
+            <img src="images/img-03.png" alt="image not found"/>
+   </div>
+</div>
+<!--section_01 ends-->
+ <div class="section_02">
+      <div class="pagecenter">
+         <h4><i>order online now</i></h4>
+         <h1>Our Delicious Pizzas</h1>
+		 <div class="section_02_div">
+         <div class="section_02_left">
+            <img src="images/img-04.png" alt="image not found"/>
+            <h3>Pepperoni</h3>
+            <h5>
+            Vitae enim vel nisi feugiat ultricies. Phasellus hendrerit pharetra posuere....
+            <h5>
+            <p>$17.80</p>
+            <a href="#">SELECT OPTION</a>
+         </div>
+         <div class="section_02_center" id="new_items">
+            <img src="images/img-05.png" alt="bg"/>
+            <h3>Glute-Free Pasta</h3>
+            <h5>
+            Integer vitae enim vel nisi feugiat ultricies. Phasellus hendrerit pharetra...
+            <h5>
+            <p>$19</p>
+            <a href="#">SELECT OPTION</a>
+         </div>
+         <div class="section_02_right">
+            <img src="images/img-06.png" alt="image not found"/>
+            <h3>Gluten-Free Pizza</h3>
+            <h5>
+            Integer vitae enim vel nisi feugiat ultricies. Phasellus hendrerit pharetra...
+            <h5>
+            <p>$14.30</p>
+            <a href="#">SELECT OPTION</a>
+         </div>
+		 </div>
+      </div>
+   </div>
+   <!--section_02 end-->
+   <div class="section_03" id="menu_card_list">
+      <div class="pagecenter">
+         <h1>Featured Dishes</h1>
+		  <div class="section_03_menu">
+            <ul class="menu">
+               <button>
+               <li>PASTA DISHES</li></button>
+               <button> <li>PIZZA</li></button>
+               <button> <li>DRINKS</li></button>
+               <button> <li>SALADS</li></button>
+               <button> <li>CHATS</li>
+            </button>
+            </ul>
+         </div>
+         <div class="section_03_left">
+            <div class="pizza_01">
+               <img src="images/img-07.jpg" alt="image not found"/>
+               <h3>Vegetarian</h3>
+               <p>Chicken, Mushroom, Onion, Bacon, BBQ sauce & Caeser sauce</p>
+               <h4>$13.00</h4>
+            </div>
+            <div class="pizza_02">
+               <img src="images/img-08.jpg" alt="image not found"/>
+               <h3>Ravioli</h3>
+               <p>Meat / Ricotta & Spinach (Can be served with all sauces)</p>
+               <h4>$25.00</h4>
+            </div>
+            <div class="pizza_03">
+               <img src="images/img-09.jpg" alt="image not found"/>
+               <h3>Lasagne</h3>
+               <p>Layers of pasta with bolognaise sauce, egg, ham, & cheese</p>
+               <h4>$35.23</h4>
+            </div>
+         </div>
+         <div class="section_03_right">
+            <div class="pizza_04">
+               <img src="images/img-10.jpg" alt="bg"/>
+               <h3>2 serve Pasta Feast Deal</h3>
+               <p>Filled with Spinach & Ricotta in Napoletana sauce</p>
+               <h4>$18.50</h4>
+            </div>
+            <div class="pizza_05">
+               <img src="images/img-11.jpg" alt="bg"/>
+               <h3>Canelloni</h3>
+               <p>Take away only Choice of pasta & one sauce served in one container</p>
+               <h4>$13.00</h4>
+            </div>
+            <div class="pizza_06">
+               <img src="images/img-12.jpg" alt="bg"/>
+               <h3>Chicken caesar</h3>
+               <p>Cheese, Olives, Capsicum & Mushroom</p>
+               <h4>$25.00</h4>
+            </div>
+         </div>
+         <a href="#">EXPLORE MENU</a>
+      </div>
+   </div>
+   <!--section_03 end-->
+   <div class="section_04">
+      <div class="pagecenter">
+         <h4>some good reviews</h4>
+         <h1>What People Say</h1>
+         <h5>""</h5>
+         <p>We've been ordering from these guys for over the years, and we've sampled almost everything on the menu and often order the listed daily specials. We know what to expect: great food and great prices. I suggest checking them out.</p>
+         <h6>Doug Barton</h6>
+      </div>      
+   </div>
+   <!--section_04 ends here-->
+   <div class="section_05">
+      <div class="pagecenter">
+         <div class="section_05_left">
+            <h1>Our Story</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam. ex ea commodo consequatuis aute irure. Dolor in reprehenderit in volue eu fugiat nulla pariatur.</p>
+            <a href="#">READ MORE</a>
+         </div>
+         <div class="section_05_right">
+            <img src="images/img-13.jpg" alt="image not found"/>
+         </div>
+      </div>
+   </div>
+   <!--section_05 ends here-->
+   <div class="section_06" id="news_list">
+      <div class="pagecenter">
+         <h3>some good news</h3>
+         <h1>Upcoming Events</h1>
+         <div class="section_06_left" style="display:none;">
+            <img src="images/img-14.jpg" alt="image not found"/>
+            <button>March 15, 2021 12:00 am</button>
+            <h2>Italian Pasta Workshop for All Family</h2>
+            <a href="#">READ MORE</a>
+         </div>
+         <div class="section_06_center" style="display:none;">
+            <img src="images/img-15.jpg" alt="image not found"/>
+            <button>March 15, 2021 12:00 am</button>
+            <h2>Italian Pasta Workshop for All Family</h2>
+            <a href="#">READ MORE</a>
+         </div>
+         <div class="section_06_right" style="display:none;">
+            <img src="images/img-16.jpg" alt="image not found"/>
+            <button>March 15, 2021 12:00 am</button>
+            <h2>Italian Pasta Workshop for All Family</h2>
+            <a href="#">READ MORE</a>
+         </div>
+      </div>
+   </div>
+   <!--section_06 ends-->
+   <div class="footer">
+      <img src="images/logo_footer.png" alt="image not found"/>
+      <p>ThemeREX &#169; 2021. All rights reserved.</p>
+   </div>
+   <!--footer section end-->
+   </body>
+      <script>// Select all links with hashes
+$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
+
+</script>
+</html>
+
+
